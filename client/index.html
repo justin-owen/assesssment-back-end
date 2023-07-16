@@ -2,10 +2,23 @@
 <html>
   <head>
     <title>Back End Assessment</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
-
+    <button id="fortuneButton">Get a Fortune</button><div id="fortuneDisplay"></div>
+    <br>
+    <form class="addGoal">
+      <input type="text" id="inputGoals" placeholder="Input daily goal...">
+      <button id="Submit">Submit</button>
+    </form>
+    <h3>Daily Goals:</h3>
+    <section id="displaySection"></section>
+    <form class="editGoal">
+      <input type="text" id="new-goal" placeholder="Input new goal...">
+      <input type="number" placeholder="id #" style="width: 40px;" id="goalNum">
+      <button id="Submit">Submit</button>
+    </form>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
     
